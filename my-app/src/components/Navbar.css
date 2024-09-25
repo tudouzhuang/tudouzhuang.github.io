@@ -1,9 +1,7 @@
 .navbar {
   width: 40px; /* 左侧导航栏宽度 */
   height: 100%;
-  background-color: #f8f9fa;
   padding: 20px;
-  position: fixed; /* 固定在左侧 */
   top: 0;
   left: 0;
   border-right: 1px solid #dee2e6;
@@ -44,7 +42,6 @@
     height: 100%;
     background-color: #f8f9fa;
     padding: 20px;
-    position: fixed; /* 固定在左侧 */
     top: 0;
     left: 0;
     border-right: 1px solid #dee2e6;

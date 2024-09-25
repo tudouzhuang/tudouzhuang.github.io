@@ -7,23 +7,25 @@ import Navbar from '../components/Navbar';
 import Tips from '../components/Tips';
 import All_text from '../TextData';  // 导入文本数据
 import Self_intro from '../components/Self_intro';
+import Sidebar from '../components/Sidebar';
 
 function Home() {
   const navigate = useNavigate(); 
 
   return (
-    <div>
-      <Header />
+    <div className="app-container">
       <Navbar />
-      <div className="centered-x">
+      <div className="main-layout">
         <div>
-          <Tips />
-          <Content title="my blog" textArray={All_text.blogContent} /> {/* 传递文本数组 */}
+        <Header />
+        <Tips />
+        <Content title="为什么MXL需要自慰" textArray={All_text.blogContent} /> {/* 传递文本数组 */}
         </div>
-        <div class="flex_profile">
+        <div className="flex_profile">
           <Self_intro />
         </div>
       </div>
+      <Sidebar />
     </div>
   );
 }

@@ -5,6 +5,7 @@
     overflow-y: auto; /* 如果内容溢出，允许滚动 */
     margin-left: 100px; /* 为内容栏设置左边距，确保不被导航栏遮挡 */
     margin-top: 45px;
+    margin-bottom: 20px;
     border-radius: 15px; /* 设置圆角 */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 添加轻微阴影，增强视觉效果 */
     width: 1050px;
