@@ -1,0 +1,29 @@
+/* src/components/Header.css */
+.header {
+  margin-left: 80px;
+  width: calc(100% - 80px); /* 修正宽度，避免 header 溢出 */
+  height: 50px;
+  background-color: rgba(70, 172, 172, 0.7); /* 半透明背景颜色 */
+  display: flex;
+  align-items: center;
+  position: fixed;
+  justify-content: right; /* 调整组件相对位置的 */
+  top: 0;
+  z-index: 1000; /* 确保搜索框在其他内容上方 */
+  backdrop-filter: blur(10px); /* 磨砂玻璃效果 */
+  -webkit-backdrop-filter: blur(10px); /* Safari 支持 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加轻微的阴影 */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* 白色透明边框线 */
+}
+
+  
+  .search-bar {
+    width: 400px; /* 搜索框宽度 */
+    height: 12px; /* 搜索框高度 */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-right: 200px;
+  }
+  

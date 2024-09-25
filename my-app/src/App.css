@@ -36,3 +36,58 @@
     transform: rotate(360deg);
   }
 }
+
+.app-container {
+  display: flex;
+  height: 100vh; /* 让整个页面的高度填满屏幕 */
+}
+
+.img-container {
+  width: 40px;
+  height: 40px;
+  color:white;
+  border-radius: 50%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.centered-x {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+}
+
+.centered-y {
+  display: flex;
+  align-items: center; /* 垂直居中 */
+}
+
+.area_Navbar {
+  margin-left: 80px;
+}
+
+/* src/App.css */
+.app-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-layout {
+  display: flex;
+  margin-top: 60px; /* 留出空间让搜索框不挡住内容 */
+}
+
+.navbar {
+  width: 200px;
+  position: fixed;
+  top: 60px; /* 确保导航栏在搜索框下方 */
+  left: 0;
+  height: calc(100vh - 60px);
+  background-color: #333;
+  padding: 20px;
+}
+
+.content-area {
+  margin-left: 220px;
+  padding: 20px;
+  flex-grow: 1;
+}
