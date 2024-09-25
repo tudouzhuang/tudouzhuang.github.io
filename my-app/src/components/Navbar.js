@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import '../App.css';
-import Home from '../pages/Home';
 
 function Navbar() {
   return (
@@ -15,7 +14,7 @@ function Navbar() {
         <li className="centered-x navber_element" style={{ height: '20px' }}>{/* 这个是头像和下面选项中间留个间隔 */}
         </li>
         <li class="centered-x navber_element">
-          <Link to="/Home">主页</Link>
+          <Link to="/">主页</Link>
         </li>
         <li class="centered-x navber_element">
           <Link to="/contact">联系</Link>

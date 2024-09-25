@@ -1,14 +1,14 @@
 import React from "react";
-import Self_intro from "../components/Self_intro";
+import Navbar from "../components/Navbar";
 
-const NotFound = () => {
+const Connect = () => {
   return (
     <div>
+      <Navbar/>
       <h1>404 Not Found</h1>
       <p>The page you requested couldn't be found.</p>
-      <Self_intro />
     </div>
   );
 };
 
-export default NotFound;
+export default Connect;

@@ -1,16 +1,16 @@
-.content {
+.tips {
     flex: 1; /* 让内容栏占据剩余的空间 */
     padding: 20px;
-    background-color: #f4f4f4; /* 设置一个浅色背景区分内容 */
+    background-color: #FFF3CD; /* 设置一个浅色背景区分内容 */
     overflow-y: auto; /* 如果内容溢出，允许滚动 */
     margin-left: 100px; /* 为内容栏设置左边距，确保不被导航栏遮挡 */
-    margin-top: 45px;
+    margin-top: 85px;
     border-radius: 15px; /* 设置圆角 */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 添加轻微阴影，增强视觉效果 */
     width: 1050px;
 }
 
-.content h1 {
+.tips h1 {
     font-size: 40px;
     display: flex;
     justify-content: center;
@@ -18,7 +18,7 @@
     word-wrap: break-word;
 }
 
-.content words{
+.tips words{
     display: block;
     white-space: pre-line;
     font-size: 24px;

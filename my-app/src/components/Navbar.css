@@ -37,3 +37,45 @@
 .navber_element {
   height: 80px;            
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    width: 40px; /* 左侧导航栏宽度 */
+    height: 100%;
+    background-color: #f8f9fa;
+    padding: 20px;
+    position: fixed; /* 固定在左侧 */
+    top: 0;
+    left: 0;
+    border-right: 1px solid #dee2e6;
+    float: left; /* 使用 float */
+    background-color:#46ACAC
+  }
+  
+  
+  .navbar h2 {
+    margin-bottom: 20px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    margin: 10px 0;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #ffffff; /* 链接颜色 */
+  }
+  
+  .navbar ul li a:hover {
+    color: #000000; /* 悬停颜色 */
+  }
+  
+  .navber_element {
+    height: 80px;            
+  }
+}
