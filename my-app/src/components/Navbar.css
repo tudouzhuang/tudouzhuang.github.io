@@ -37,15 +37,14 @@
   height: 80px;            
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .navbar {
     width: 40px; /* 左侧导航栏宽度 */
     height: 100%;
     background-color: #f8f9fa;
-    padding: 20px;
+    padding: 5px;
     top: 0;
     left: 0;
-    border-right: 1px solid #dee2e6;
     float: left; /* 使用 float */
     background-color:#46ACAC
   }

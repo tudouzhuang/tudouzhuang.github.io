@@ -1,0 +1,61 @@
+/* 背景图，确保容器占满整个页面 */
+.about-container {
+    height: 100vh;
+    width: 100vw; /* 确保占满屏幕宽度 */
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    background-image: url('../img/user.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* 毛玻璃效果的中间组件 */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 600px; /* 限制最大宽度 */
+    width: 100%; /* 占满父容器的宽度 */
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    margin: 0 20px; /* 给两侧留点空隙 */
+  }
+  
+  /* 头像 */
+  .avatar-container {
+    margin-bottom: 20px;
+  }
+  
+  .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 分隔线 */
+  .divider {
+    margin: 20px 0;
+    border: none;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  /* 图标 */
+  .social-icons a {
+    margin: 0 10px;
+    transition: transform 0.3s ease; /* 添加平滑的缩放效果 */
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2); /* 鼠标悬浮时放大 */
+  }
+  
+  .icon {
+    width: 40px; /* 根据需要调整图标大小 */
+    height: 40px;
+  }
+  
