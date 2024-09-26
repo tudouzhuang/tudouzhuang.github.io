@@ -6,7 +6,8 @@
   left: 0;
   border-right: 1px solid #dee2e6;
   float: left; /* 使用 float */
-  background-color:#46ACAC
+  background-color:#46ACAC !important;
+  z-index: 5;
 }
 
 

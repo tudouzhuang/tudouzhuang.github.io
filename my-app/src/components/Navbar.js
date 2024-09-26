@@ -17,7 +17,7 @@ function Navbar() {
           <Link to="/">主页</Link>
         </li>
         <li class="centered-x navber_element">
-          <Link to="/contact">联系</Link>
+          <Link to="/article">文章</Link>
         </li>
         <li class="centered-x navber_element">
           <Link to="/about">关于</Link>
