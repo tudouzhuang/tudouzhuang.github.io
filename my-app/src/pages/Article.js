@@ -19,7 +19,7 @@ function Article() {
         <div>
           <Header />
           <Tips />
-          <Content title="为什么MXL需要自慰" textArray={All_text.blogContent} /> {/* 传递文本数组 */}
+          <Content title="语文经历" textArray={All_text.blogContent} /> {/* 传递文本数组 */}
         </div>
         <div className="flex_profile">
           <Self_intro />

@@ -76,6 +76,11 @@
   margin-top: 60px; /* 留出空间让搜索框不挡住内容 */
 }
 
+.main-layin {
+  display: flex;
+  flex-flow: column;
+}
+
 .navbar {
   width: 200px;
   position: fixed;

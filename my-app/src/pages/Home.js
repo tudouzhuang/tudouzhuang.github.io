@@ -16,7 +16,7 @@ function Home() {
     <div className="app-container">
       <Navbar />
       <div className="main-layout">
-        <div>
+        <div class="main-layin">
         <Header />
         <Tips />
         <CustomComponent imagePath={require('../img/article.png')}/>
