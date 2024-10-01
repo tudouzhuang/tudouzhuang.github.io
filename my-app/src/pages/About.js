@@ -13,7 +13,7 @@ function About() {
         </div>
         <hr className="divider" />
         <div className="social-icons">
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <a class="img" href="https://github.com/tudouzhuang" target="_blank" rel="noopener noreferrer">
             <img src={require('../img/github-icon.png')} alt="GitHub" className="icon" />
           </a>
           <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">

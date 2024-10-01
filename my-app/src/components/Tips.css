@@ -1,5 +1,5 @@
 .tips {
-    flex: 1; /* 让内容栏占据剩余的空间 */
+
     padding: 20px;
     background-color: #FFF3CD; /* 设置一个浅色背景区分内容 */
     overflow-y: auto; /* 如果内容溢出，允许滚动 */
@@ -7,7 +7,8 @@
     margin-top: 20px;
     border-radius: 15px; /* 设置圆角 */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 添加轻微阴影，增强视觉效果 */
-    width: 1050px;
+    width: 70vw;
+    height: auto;
 }
 
 .tips h1 {
@@ -30,7 +31,7 @@
 
 @media (max-width: 600px) {
     .tips {
-        flex: 1; /* 让内容栏占据剩余的空间 */
+
         padding: 20px;
         background-color: #FFF3CD; /* 设置一个浅色背景区分内容 */
         overflow-y: auto; /* 如果内容溢出，允许滚动 */
