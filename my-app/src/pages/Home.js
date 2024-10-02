@@ -12,7 +12,7 @@ function Home() {
   const navigate = useNavigate(); 
 
   return (
-    <div className="app-container">
+  <div className="app-container">
       <Navbar />
       <div className="main-layout">
         <div class="main-layin">
@@ -32,7 +32,7 @@ function Home() {
         </div>
       </div>
       <Sidebar />
-    </div>
+  </div>
   );
 }
 

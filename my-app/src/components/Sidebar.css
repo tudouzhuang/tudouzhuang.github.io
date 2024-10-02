@@ -1,11 +1,11 @@
 .sidebar {
   width: 220px; /* 设置宽度 */
-  background-color: rgba(70, 172, 172, 0.7); /* 半透明背景颜色 */
+  background-color: #222c43e0; /* 半透明背景颜色 */
   padding: 20px; /* 内边距 */
   margin-top: 80px;
   margin-right: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影效果 */
-  height: auto; /* 高度填满屏幕，减去顶部的空间 */
+  height: 100vh; /* 高度填满屏幕，减去顶部的空间 */
   backdrop-filter: blur(10px); /* 磨砂玻璃效果 */
   -webkit-backdrop-filter: blur(10px); /* Safari 支持 */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加轻微的阴影 */
@@ -18,6 +18,7 @@
 h2 {
   margin-bottom: 10px; /* 标题底部间距 */
   flex-direction: column;
+  color: antiquewhite;
 }
 
 ul, ol {
@@ -26,4 +27,5 @@ ul, ol {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  color:antiquewhite;
 }

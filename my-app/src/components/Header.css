@@ -2,7 +2,7 @@
   margin-left: 80px;
   width: calc(100% - 80px); /* 修正宽度，避免 header 溢出 */
   height: 50px;
-  background-color: rgba(70, 172, 172, 0.7); /* 半透明背景颜色 */
+  background-color: #222c43e0; /* 半透明背景颜色 */
   display: flex;
   align-items: center;
   position: fixed;
@@ -31,7 +31,7 @@
       margin-right: 0px;
       width: calc(100%); /* 修正宽度，避免 header 溢出 */
       height: 50px;
-      background-color: rgba(70, 172, 172, 0.7); /* 半透明背景颜色 */
+      background-color: #222c43e0; /* 半透明背景颜色 */
       display: flex;
       align-items: center;
       position: fixed;
