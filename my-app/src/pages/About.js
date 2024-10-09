@@ -8,7 +8,7 @@ function About() {
       <div className="glass-card">
         <div className="avatar-container">
           <Link to="/">
-             <img src={require('../img/avatar.png')} alt="Profile" className="avatar" />
+             <img src={require('../img/user.jpeg')} alt="Profile" className="avatar" />
           </Link>
         </div>
         <hr className="divider" />

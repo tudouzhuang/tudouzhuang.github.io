@@ -39,13 +39,12 @@
 
 .app-container {
   display: flex;
-  min-height: 100vh; 
+  height: 100%; 
   width: 100vw;
   margin: 0;
-  background-color: #F4F4F4;
-  overflow-y: auto; /* 允许垂直滚动 */
+  background-color: #282c340c; /* 深灰色，透明度可调 */
+  backdrop-filter: blur(10px); /* 毛玻璃效果 */
 }
-
 
 .img-container {
   width: 40px;
@@ -54,6 +53,7 @@
   border-radius: 50%;
   justify-content: center;
   margin: 0 auto;
+  display: flex;
 }
 
 .centered-x {
@@ -103,4 +103,18 @@
   align-items: center; /* 垂直居中对齐 */
   margin-top: 20px; /* 与内容之间的距离 */
   margin-right: 30px; /* 向右侧预留空间 */
+}
+
+@media (max-width: 600px){
+  .app-container {
+    display: flex;
+    height: auto;
+    min-height: 200vh; 
+    width: 100vw;
+    margin: 0;
+    background-color: rgba(40, 40, 40, 0.7); /* 深灰色，透明度可调 */
+    backdrop-filter: blur(10px); /* 毛玻璃效果 */
+  }
+
+  
 }

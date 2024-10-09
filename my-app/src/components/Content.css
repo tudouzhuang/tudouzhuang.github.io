@@ -7,8 +7,9 @@
     margin-top: 45px;
     margin-bottom: 20px;
     border-radius: 15px; /* 设置圆角 */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 添加轻微阴影，增强视觉效果 */
-    width: 1050px;
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.2); /* 添加轻微阴影，增强视觉效果 */
+    width: 70vw;
+    justify-content: center;
 }
 
 .content h1 {
@@ -28,6 +29,43 @@
 .container_img{
     width: 600px;
 }
+
+.blog-post-footer {
+    width: auto;
+    background-color: rgba(70, 172, 172, 0.1);
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-color: #428bca;
+    border-left-width: 7px;
+  }
+  
+  .insights {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .footer-info {
+    display: flex;
+    font-size: 14px;
+    color: #777;
+    justify-content: center;
+    
+  }
+
+  .p{
+    font-size: 2em;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+  }
 
 @media (max-width: 600px){
 
