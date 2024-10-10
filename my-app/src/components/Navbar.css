@@ -1,79 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
 .navbar {
-  width: 40px; /* 左侧导航栏宽度 */
-  height: 96.5%;
-  padding: 20px;
-  top: 0;
-  left: 0;
-  float: left; /* 使用 float */
-  background-color:#222c43 !important;
-  z-index: 5;
   display: flex;
-  flex: 1;
+  flex-direction: column; /* 确保导航栏内容是竖直排列 */
+  width: 256px;
+  background: #F6F8FC !important;
+  z-index: 5;
+  flex-grow: 1; /* 让 Navbar 也可以扩展到剩余空间 */
+}
+
+.navbar.collapsed {
+  width: 80px; /* 收缩后的宽度 */
+}
+
+.navbar.expanded {
+  width: 256px; /* 扩展后的宽度 */
+}
+
+.main_buttonbox {
+  align-items: center;
+  display: flex;
+  height: 56px;
+  margin: 8px 0 16px 0;
+  padding-left: 8px;
+  width: 248px;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 16px;
+  color: rgb(32, 33, 36);
+  user-select: none;
+  -webkit-box-align: center;
 }
 
 
-.navbar h2 {
-  margin-bottom: 20px;
-}
-
-.navbar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.navbar ul li {
-  margin: 10px 0;
-}
-
-.navbar ul li a {
-  text-decoration: none;
-  color: antiquewhite; /* 链接颜色 */
-}
-
-.navbar ul li a:hover {
-  color: #000000; /* 悬停颜色 */
-}
-
-.navber_element {
-  height: 80px;            
-}
-
-@media (max-width: 600px) {
-  .navbar {
-    width: 40px; /* 左侧导航栏宽度 */
-    height: 99.2%;
-    background-color: #f8f9fa;
-    padding: 5px;
-    top: 0;
-    left: 0;
-    float: left; /* 使用 float */
-    background-color:#46ACAC
-  }
-  
-  
-  .navbar h2 {
-    margin-bottom: 20px;
-  }
-  
-  .navbar ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .navbar ul li {
-    margin: 10px 0;
-  }
-  
-  .navbar ul li a {
-    text-decoration: none;
-    color: #ffffff; /* 链接颜色 */
-  }
-  
-  .navbar ul li a:hover {
-    color: #000000; /* 悬停颜色 */
-  }
-  
-  .navber_element {
-    height: 80px;            
-  }
+.main_button {
+  align-items: center;
+  display: flex;
+  height: 56px;
+  min-width: 96px;
+  padding-right: 24px;
+  width: 98px;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+  color: rgb(0, 29, 53);
+  background-color: rgb(194, 231, 255);
+  border-radius: 16px;
+  cursor: pointer;
+  transition-duration: 0.08s;
+  transition-timing-function: linear;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
 }

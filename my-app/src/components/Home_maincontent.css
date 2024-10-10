@@ -1,0 +1,23 @@
+.main-content {
+    display: flex;              /* 让内容成为 flex 容器 */
+    flex-direction: column;     /* 如果需要竖直排列内容 */
+    position: relative;
+    flex-grow: 1;               /* 占据剩余空间 */
+    width: 100%;                /* 宽度占满父元素 */             /* 高度占满父元素 */
+    padding: 20px;              /* 可选：内边距 */
+    overflow: hidden;
+  }
+
+.main_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+
+.content_container{
+
+}
