@@ -1,14 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Navbar.css';
 import '../App.css';
 
-function Navbar() {
-  const [isExpanded, setIsExpanded] = useState(false); // 初始状态为不扩展
-
-  const toggleNavbar = () => {
-    setIsExpanded(!isExpanded); // 切换状态
-  };
-
+function Navbar({ toggleNavbar, isExpanded }) {
   return (
     <div className={`navbar ${isExpanded ? 'expanded' : 'collapsed'}`}>
       <div className="main_buttonbox">

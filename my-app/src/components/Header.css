@@ -8,14 +8,15 @@
 }
 
 .header {
-  width: calc(100% - 80px);
-  height: 64px;
+  display: flex;
+  height: 48px;
   width: 100%;
   background: #F6F8FC;
   display: flex;
   align-items: center;
   position: relative;
-  justify-content: right;
+  justify-content:space-between;
+  padding: 8px;
   top: 0;
   z-index: 1000;
   backdrop-filter: blur(10px);
@@ -49,11 +50,33 @@
 }
 
 .search-bar {
-  width: 400px; /* 搜索框宽度 */
-  height: 12px; /* 搜索框高度 */
+  display: flex;
+  width: 400px; 
+  height: 12px; 
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
   font-size: 16px;
   margin-right: 100px;
+}
+
+.menu_container {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  height: 100%;
+}
+
+.menu_button {
+  display: flex;
+  border-radius: 50px;
+  width: 48px;
+  height: 48px;
+  margin-left: 5px;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease; 
+}
+
+.menu_button:hover {
+  background-color: #d1d1d1;
 }
