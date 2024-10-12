@@ -1,28 +1,54 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Navbar.css';
 import '../App.css';
 
-function Navbar() {
+function Navbar({ toggleNavbar, isExpanded, setIsExpanded }) {
+
+  // 鼠标悬停时展开
+  const handleMouseEnter = () => {
+    if (!isExpanded) {
+      setIsExpanded(true); // 展开
+    }
+  };
+
+  // 鼠标离开时收起
+  const handleMouseLeave = () => {
+    if (isExpanded) {
+      setIsExpanded(false); // 收起
+    }
+  };
+
   return (
-    <div className="navbar">
-      <div class="centered-x"></div>
-      <ul>
-        <li>
-          <Link to="/"><img class="img-container" src={require('../img/user.jpeg')} alt="用户头像" /></Link>
-        </li>
-        <li className="centered-x navber_element" style={{ height: '20px' }}>{/* 这个是头像和下面选项中间留个间隔 */}
-        </li>
-        <li class="centered-x navber_element">
-          <Link to="/">主页</Link>
-        </li>
-        <li class="centered-x navber_element">
-          <Link to="/article">文章</Link>
-        </li>
-        <li class="centered-x navber_element">
-          <Link to="/About">关于</Link>
-        </li>
-      </ul>
+    <div className={`navbar ${isExpanded ? 'expanded' : 'collapsed'}`}>
+      <div className={`main_buttoncontainer ${isExpanded ? 'expanded' : 'collapsed'}`}>
+        <div className={`main_buttonbox ${isExpanded ? 'expanded' : 'collapsed'}`}>
+          <button className="main_button" onClick={toggleNavbar}>
+            {isExpanded ? '收起' : '展开'}
+          </button>
+        </div>
+      </div>
+      <div className={`totalicon_container ${isExpanded ? 'expanded' : 'collapsed'}`}>
+        <div
+          className={`icon_container ${isExpanded ? 'expanded' : 'collapsed'}`}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        />
+        <div
+          className={`icon_container ${isExpanded ? 'expanded' : 'collapsed'}`}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        />
+        <div
+          className={`icon_container ${isExpanded ? 'expanded' : 'collapsed'}`}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >1</div>
+        <div
+          className={`icon_container ${isExpanded ? 'expanded' : 'collapsed'}`}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >1</div>
+      </div>
     </div>
   );
 }

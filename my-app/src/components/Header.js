@@ -1,15 +1,26 @@
-// src/components/Header.js
 import React from 'react';
-import './Header.css'; // 引入相关样式
+import { FiAlignLeft } from "react-icons/fi";
+import './Header.css'; 
 
-function Header() {
+function Header({ toggleNavbar, isExpanded }) {
   return (
     <div className="header">
-      <input
-        type="text"
-        placeholder="搜索..."
-        className="search-bar"
-      />
+      <div className="menu_container">
+        <button className="menu_button" onClick={toggleNavbar}>
+           <FiAlignLeft size={48}/>
+        </button>
+        <div className="img_container"></div>
+      </div>
+      <div className="searchbar_container">
+          <input
+            type="text"
+            placeholder="..."
+            className="search-bar"
+          />
+      </div>
+      <div className="selfprofile_contianer">
+        sadsad
+      </div>
     </div>
   );
 }

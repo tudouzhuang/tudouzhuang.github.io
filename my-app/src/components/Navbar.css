@@ -1,79 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
 .navbar {
-  width: 40px; /* 左侧导航栏宽度 */
-  height: 96.5%;
-  padding: 20px;
-  top: 0;
-  left: 0;
-  float: left; /* 使用 float */
-  background-color:#222c43 !important;
-  z-index: 5;
   display: flex;
-  flex: 1;
+  flex-direction: column; /* 确保导航栏内容是竖直排列 */
+  justify-content: start;
+  background: #F6F8FC !important;
+  z-index: 5;
+  flex-grow: 1; /* 让 Navbar 也可以扩展到剩余空间 */
+  transition: width 0.3s ease; /* 宽度变化时的过渡动画 */
+  transition-delay: 0.1s;
+}
+
+.navbar.collapsed {
+  width: 72px; /* 收缩后的宽度 */
+}
+
+.navbar.expanded {
+  width: 256px; /* 扩展后的宽度 */
+}
+
+.main_buttoncontainer {
+  display: flex;                /* 使用 flex 布局 */
+  flex-direction: column;
+  min-height: 80px;                 /* 固定高度 */
+  width: 100%;                  /* 宽度占据父元素的所有宽度 */
+  justify-content: center;
+  align-items: start;
+  transition-delay: 0.1s;
+  border-radius: 16px;
+}
+
+.main_buttoncontainer.collapsed {
+  width: 100%;;   /* 当 navbar 收缩时的宽度 */
+}
+
+.main_buttoncontainer.expanded {
+  width: 100%;   /* 当 navbar 展开时的宽度，100% 占满父元素 */
+  max-height: 80px;
 }
 
 
-.navbar h2 {
-  margin-bottom: 20px;
+.main_buttonbox {
+  align-items: center;
+  display: flex;
+  height: 56px;
+  border-radius: 16px;
+  transition: width 0.3s ease; /* 为宽度变化添加过渡效果 */
+  padding-left: 8px;
+  transition-delay: 0.1s;
 }
 
-.navbar ul {
-  list-style: none;
-  padding: 0;
+.main_buttonbox.collapsed {
+  width: 56px; /* 收缩时的宽度 */
 }
 
-.navbar ul li {
-  margin: 10px 0;
+.main_buttonbox.expanded {
+  width: 122px; /* 扩展时的宽度 */
 }
 
-.navbar ul li a {
-  text-decoration: none;
-  color: antiquewhite; /* 链接颜色 */
+.main_button {
+  align-items: center;
+  display: flex;
+  height: 56px;
+  min-width: 56px;
+  width: 100%; /* 确保宽度随父容器变化 */
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+  color: rgb(0, 29, 53);
+  background-color: rgb(194, 231, 255);
+  border-radius: 16px;
+  border-width: 0;
+  cursor: pointer;
+  transition-duration: 0.3s; /* 为按钮宽度变化添加过渡效果 */
+  transition-timing-function: ease;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
 }
 
-.navbar ul li a:hover {
-  color: #000000; /* 悬停颜色 */
+.main_button.collapsed {
+  width: 80px; /* 收缩后的宽度 */
 }
 
-.navber_element {
-  height: 80px;            
+.main_button.expanded {
+  width: 56px; /* 扩展后的宽度 */
 }
 
-@media (max-width: 600px) {
-  .navbar {
-    width: 40px; /* 左侧导航栏宽度 */
-    height: 99.2%;
-    background-color: #f8f9fa;
-    padding: 5px;
-    top: 0;
-    left: 0;
-    float: left; /* 使用 float */
-    background-color:#46ACAC
-  }
+.main_button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.totalicon_container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: start;
+  align-content: center;
+  transition-delay: 0.1s;
+}
+
+.totalicon_container.collapsed {
+  width: 72px;
+  justify-content: start;
+}
+
+.totalicon_container.expanded {
+  width: 256px;
+}
+
+.icon_container {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  margin-left: 18px;
+  background-color: #EAEBEF;
+  transition-duration: 0.3s; /* 为按钮宽度变化添加过渡效果 */
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
+  -webkit-font-smoothing: antialiased;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.icon_container:hover{
+  background-color: #D3E3FD;
+}
+
+.icon_container.collapsed {
+  width: 32px;
+  height: 32px;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.icon_container.expanded {
+  width: 220px;
+  margin-left: 0;
+  margin-right: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  flex-direction: row;
+  justify-content: start;
+  padding-left: 18px;
+  align-items: center;
+  background-color: #D3E3FD;
+}
+
+.icon_box{
   
-  
-  .navbar h2 {
-    margin-bottom: 20px;
-  }
-  
-  .navbar ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .navbar ul li {
-    margin: 10px 0;
-  }
-  
-  .navbar ul li a {
-    text-decoration: none;
-    color: #ffffff; /* 链接颜色 */
-  }
-  
-  .navbar ul li a:hover {
-    color: #000000; /* 悬停颜色 */
-  }
-  
-  .navber_element {
-    height: 80px;            
-  }
 }
