@@ -2,13 +2,52 @@ import React from 'react';
 import './Navbar.css';
 import '../App.css';
 
-function Navbar({ toggleNavbar, isExpanded }) {
+function Navbar({ toggleNavbar, isExpanded, setIsExpanded }) {
+
+  // 鼠标悬停时展开
+  const handleMouseEnter = () => {
+    if (!isExpanded) {
+      setIsExpanded(true); // 展开
+    }
+  };
+
+  // 鼠标离开时收起
+  const handleMouseLeave = () => {
+    if (isExpanded) {
+      setIsExpanded(false); // 收起
+    }
+  };
+
   return (
     <div className={`navbar ${isExpanded ? 'expanded' : 'collapsed'}`}>
-      <div className="main_buttonbox">
-        <button className="main_button" onClick={toggleNavbar}>
-          {isExpanded ? '收起' : '展开'}
-        </button>
+      <div className={`main_buttoncontainer ${isExpanded ? 'expanded' : 'collapsed'}`}>
+        <div className={`main_buttonbox ${isExpanded ? 'expanded' : 'collapsed'}`}>
+          <button className="main_button" onClick={toggleNavbar}>
+            {isExpanded ? '收起' : '展开'}
+          </button>
+        </div>
+      </div>
+      <div className={`totalicon_container ${isExpanded ? 'expanded' : 'collapsed'}`}>
+        <div
+          className={`icon_container ${isExpanded ? 'expanded' : 'collapsed'}`}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        />
+        <div
+          className={`icon_container ${isExpanded ? 'expanded' : 'collapsed'}`}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        />
+        <div
+          className={`icon_container ${isExpanded ? 'expanded' : 'collapsed'}`}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >1</div>
+        <div
+          className={`icon_container ${isExpanded ? 'expanded' : 'collapsed'}`}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >1</div>
       </div>
     </div>
   );
