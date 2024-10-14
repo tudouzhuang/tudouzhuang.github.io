@@ -7,7 +7,7 @@ function Header({ toggleNavbar, isExpanded }) {
     <div className="header">
       <div className="menu_container">
         <button className="menu_button" onClick={toggleNavbar}>
-           <FiAlignLeft size={48}/>
+           <FiAlignLeft size={24}/>
         </button>
         <div className="img_container"></div>
       </div>

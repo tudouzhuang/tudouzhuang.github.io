@@ -9,7 +9,7 @@
   flex-direction: column; /* 纵向排列 */
   width: 56px; /* 侧边栏宽度 */
   justify-content: flex-end;
-  background-color: rgba(34, 44, 67, 0.88); /* 半透明背景颜色 */
+  background-color: #F6F8FC; /* 半透明背景颜色 */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影效果 */
   backdrop-filter: blur(10px); /* 磨砂玻璃效果 */
   border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* 白色透明边框线 */

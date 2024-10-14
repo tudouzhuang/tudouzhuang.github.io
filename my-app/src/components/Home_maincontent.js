@@ -8,8 +8,48 @@ function HomeMainContent() {
         <div className="content_container">
              <div className="main-content">
               <CustomComponent />
-                <h1>Main Content</h1>
-                <p>This is the main content area.</p>
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />            
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              <CustomComponent />
+              
             </div>
         </div>
     </div>

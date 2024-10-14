@@ -13,7 +13,7 @@ const Content = ({ title, textArray, updateDate, likes }) => {
       </div>
       <h2></h2>
       {textArray.map((text, index) => (
-        <words key={index}>{text}</words> 
+        <words key={index}>{text}</words>
       ))}
     </div>
   );

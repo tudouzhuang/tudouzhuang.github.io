@@ -4,20 +4,23 @@
     position: relative;
     flex-grow: 1;               /* 占据剩余空间 */
     width: 100%;                /* 宽度占满父元素 */             /* 高度占满父元素 */
-    padding: 20px;              /* 可选：内边距 */
     overflow: hidden;
+    min-width: 400px;
+    border-radius: 8px;
   }
 
 .main_container {
+    overflow-y: auto !important;
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-bottom: 10px;
-    border-radius: 15px;
     background-color: white;
+    min-width: 400px;
+    border-radius: 15px;
 }
 
-
 .content_container{
-
+    display: flex;
+    min-width: 400px;
 }

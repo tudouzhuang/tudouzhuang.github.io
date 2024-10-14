@@ -12,7 +12,6 @@ function CustomComponent({ link, imagePath, presetText }) {
   return (
     <div className="custom-component" onClick={handleClick}>
       <div className="image-display">
-        <img src={imagePath} className="img_custom" alt="Custom" />
         <div className="gradient-background"></div>
       </div>
       <div className="text-display">
