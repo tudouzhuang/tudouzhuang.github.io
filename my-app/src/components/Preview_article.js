@@ -12,6 +12,7 @@ function CustomComponent({ link, imagePath, presetText }) {
   return (
     <div className="custom-component" onClick={handleClick}>
       <div className="image-display">
+        123456789012345678901234567890123456789012345678901234567890
         <div className="gradient-background"></div>
       </div>
       <div className="text-display">

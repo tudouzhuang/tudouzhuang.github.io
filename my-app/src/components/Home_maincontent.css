@@ -17,6 +17,7 @@
     min-width: 400px;
     border-radius: 15px;
     overflow-y: auto !important; /* 允许内容滚动 */
+    overflow-x: auto !important;
 }
 
 .content_container{
@@ -27,13 +28,12 @@
 .header_content {
     display: flex;
     height: 48px;
-    width: 100%;
+    width: 200px;
     background: white;
     align-items: center;
     justify-content: space-between;
     position: sticky;  
-    top: 0;           
-    z-index: 1000;   
+    top: 0;            
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: none;
