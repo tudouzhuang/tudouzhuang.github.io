@@ -1,12 +1,3 @@
-:root {
-  --cream: #f3f9d2ff;
-  --asparagus: #669d31ff;
-  --azul: #016fb9ff;
-  --carrot-orange: #ea9010ff;
-  --robin-egg-blue: #44cfcbff;
-  --uranian-blue: #a3d9ffff;
-}
-
 .header {
   display: flex;
   height: 48px;
@@ -73,30 +64,6 @@
   background-color: #E8EAED;
 }
 
-.img_container {
-  display: flex;
-  width: 110px;
-  height: 44px;
-}
-
-.icon_container {
-  display: flex;
-  width: 32px;
-  height: 32px;
-}
-
-.icon_container:hover{
-  background-color: #D3E3FD;
-}
-
-.selfprofile_contianer {
-  display: flex;
-  width: 96px;
-  height: 48px;
-  margin-left: 100px;
-  justify-content: center;
-}
-
 .searchbar_container {
   display: flex;
   height: 48px;
@@ -113,7 +80,68 @@
   border: 1px solid #EAF1FB; 
   border-radius: 50px;
   flex-grow: 1;
-  margin-right: 60px;
   background-color: #EAF1FB;
 }
 
+.selfprofile_contianer {
+  display: flex;
+  width: 192px;
+  height: 48px;
+  justify-content: start;
+  flex-direction: row;
+  
+}
+
+.header_icon_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+}
+
+.header_icon_box {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F8FC;
+  border-radius: 50px;
+  transition: background-color 0.3s ease; 
+  color: #353535;
+}
+
+.header_icon_box:hover {
+  background-color: #E8EAED;
+}
+
+.header_avatar_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  height: 48px;
+}
+
+.avatar_box {
+  display: flex;
+  width: 42px;
+  height: 42px;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F8FC;
+  transition: background-color 0.3s ease; 
+}
+
+.avatar_box:hover {
+  background-color: #E8EAED;
+}
+
+.avatar_img {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+}

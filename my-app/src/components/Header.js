@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiAlignLeft } from "react-icons/fi";
+import { FiAlignLeft ,FiHelpCircle ,FiSettings } from "react-icons/fi";
 import './Header.css'; 
 
 function Header({ toggleNavbar, isExpanded }) {
@@ -19,7 +19,23 @@ function Header({ toggleNavbar, isExpanded }) {
           />
       </div>
       <div className="selfprofile_contianer">
-        sadsad
+        <div className="header_icon_container" >
+          <div className="header_icon_box"> 
+             <FiHelpCircle size={24} />
+          </div>
+        </div>
+        <div className="header_icon_container" >
+           <div className="header_icon_box"> 
+             <FiSettings size={24} />
+           </div>
+        </div>
+        <div className="header_avatar_container">
+           <div className="avatar_box"> 
+              <a href="/About" target="_self" rel="noopener noreferrer">
+                <img className="avatar_img"  src={require('../img/user.jpeg')} />
+              </a>
+           </div>
+        </div>
       </div>
     </div>
   );

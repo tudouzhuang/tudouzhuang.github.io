@@ -6,11 +6,9 @@
     width: 100%;                /* 宽度占满父元素 */             /* 高度占满父元素 */
     overflow: hidden;
     min-width: 400px;
-    border-radius: 8px;
   }
 
 .main_container {
-    overflow-y: auto !important;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -18,9 +16,52 @@
     background-color: white;
     min-width: 400px;
     border-radius: 15px;
+    overflow-y: auto !important; /* 允许内容滚动 */
 }
 
 .content_container{
     display: flex;
     min-width: 400px;
 }
+
+.header_content {
+    display: flex;
+    height: 48px;
+    width: 100%;
+    background: white;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;  
+    top: 0;           
+    z-index: 1000;   
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: none;
+    border-bottom: none;
+}
+
+  
+  .rowbutton_container {
+    display: flex;
+    flex-direction: row;
+    width: 248px;
+    height: 100%;
+    border-width: 0px;
+  }
+  
+  .row_button {
+    display: flex;
+    border-radius: 50px;
+    width: 48px;
+    height: 48px;
+    margin-left: 5px;
+    background-color: #F6F8FC;
+    transition: background-color 0.3s ease; 
+    justify-content: center;
+    align-items: center;
+    border-width: 0px;
+  }
+  
+  .row_button:hover {
+    background-color: #E8EAED;
+  }
