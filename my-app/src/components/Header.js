@@ -1,8 +1,13 @@
 import React from 'react';
 import { FiAlignLeft ,FiHelpCircle ,FiSettings } from "react-icons/fi";
+import { useNavigate } from 'react-router-dom';
 import './Header.css'; 
 
 function Header({ toggleNavbar, isExpanded }) {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate('/About');
+  };
   return (
     <div className="header">
       <div className="menu_container">
@@ -30,10 +35,8 @@ function Header({ toggleNavbar, isExpanded }) {
            </div>
         </div>
         <div className="header_avatar_container">
-           <div className="avatar_box"> 
-              <a href="/About" target="_self" rel="noopener noreferrer">
+           <div className="avatar_box" onClick={handleClick}> 
                 <img className="avatar_img"  src={require('../img/user.jpeg')} />
-              </a>
            </div>
         </div>
       </div>
