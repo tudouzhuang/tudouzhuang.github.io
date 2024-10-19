@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home_maincontent.css';
 import CustomComponent from './Preview_article';
-import { FiRotateCw, FiMusic, FiHardDrive, FiDownload, FiBook } from "react-icons/fi";
+import { FiRotateCw, FiMusic, FiHardDrive, FiDownload, FiBook, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 function HomeMainContent() {
   return (
     <div className="main_container">
@@ -50,10 +50,10 @@ function HomeMainContent() {
                   第1-50行,共103行
               </div>
               <button className="row_button">
-                 <FiRotateCw size={18}/>
+                 <FiChevronLeft size={18}/>
               </button>
               <button className="row_button">
-                 <FiRotateCw size={18}/>
+                 <FiChevronRight size={18}/>
               </button>
             </div>
          </div>

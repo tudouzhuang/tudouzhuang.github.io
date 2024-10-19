@@ -98,7 +98,7 @@
   left: 0;                    /* 从左侧开始 */
   width: 0;                   /* 初始宽度为 0 */
   height: 2px;                /* 线条的高度 */
-  background-color: #000;     /* 线条颜色 */
+  background-color: #3581b8;     /* 线条颜色 */
   transition: width 0.3s ease; /* 动画效果 */
 }
 

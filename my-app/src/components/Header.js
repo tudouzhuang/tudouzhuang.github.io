@@ -14,7 +14,7 @@ function Header({ toggleNavbar, isExpanded }) {
         <button className="menu_button" onClick={toggleNavbar}>
            <FiAlignLeft size={24}/>
         </button>
-        <img src={require('../img/blog title.png')} />
+        <img className="title_img" src={require('../img/blog title.png')} alt="the title of header" />
         <div className="img_container"></div>
       </div>
       <div className="searchbar_container">
@@ -45,7 +45,7 @@ function Header({ toggleNavbar, isExpanded }) {
         </div>
         <div className="header_avatar_container">
            <div className="avatar_box" onClick={handleClick}> 
-                <img className="avatar_img"  src={require('../img/user.jpeg')} />
+                <img className="avatar_img"  src={require('../img/user.jpeg')} alt="my avatar" />
            </div>
         </div>
       </div>
