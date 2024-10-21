@@ -36,21 +36,27 @@ function Navbar({ toggleNavbar, isExpanded, setIsExpanded }) {
             </a>
             <div className={`navbar_word ${isExpanded ? 'show' : ''}`}>首页</div>
         </div>
-        <div
-          className={`icon_container ${isExpanded ? 'expanded' : 'collapsed'}`}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        />
-        <div
-          className={`icon_container ${isExpanded ? 'expanded' : 'collapsed'}`}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >1</div>
-        <div
-          className={`icon_container ${isExpanded ? 'expanded' : 'collapsed'}`}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >1</div>
+        <div className={`icon_container ${isExpanded ? 'expanded' : 'collapsed'}`}
+          onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <a className="icon_box" href="/" target="_self" rel="noopener noreferrer"> 
+              <FiHome size={24} />
+            </a>
+            <div className={`navbar_word ${isExpanded ? 'show' : ''}`}>首页</div>
+        </div>
+        <div className={`icon_container ${isExpanded ? 'expanded' : 'collapsed'}`}
+          onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <a className="icon_box" href="/" target="_self" rel="noopener noreferrer"> 
+              <FiHome size={24} />
+            </a>
+            <div className={`navbar_word ${isExpanded ? 'show' : ''}`}>首页</div>
+        </div>
+        <div className={`icon_container ${isExpanded ? 'expanded' : 'collapsed'}`}
+          onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <a className="icon_box" href="/" target="_self" rel="noopener noreferrer"> 
+              <FiHome size={24} />
+            </a>
+            <div className={`navbar_word ${isExpanded ? 'show' : ''}`}>首页</div>
+        </div>
       </div>
     </div>
   );

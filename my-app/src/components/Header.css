@@ -52,16 +52,27 @@
   border-radius: 50px;
   width: 48px;
   height: 48px;
+  min-width: 48px;
+  min-height: 48px;
   margin-left: 5px;
   background-color: #F6F8FC;
   transition: background-color 0.3s ease; 
   justify-content: center;
   align-items: center;
   border-width: 0px;
+  cursor: pointer;
 }
 
 .menu_button:hover {
   background-color: #E8EAED;
+}
+
+.title_img {
+  display: flex;
+  flex-grow: 1;
+  max-width: 200px;
+  max-height: 30px;
+  margin-top: 10px;
 }
 
 .searchbar_container {
@@ -72,7 +83,10 @@
   align-items: center; 
 }
 
-.search-bar {
+.search-bar-box {
+  display: flex;
+  justify-items: start;
+  align-items: center;
   height: 48px; 
   font-size: 16px; 
   box-sizing: border-box;
@@ -81,6 +95,48 @@
   border-radius: 50px;
   flex-grow: 1;
   background-color: #EAF1FB;
+  max-width: 720px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;  /* 添加过渡效果 */
+}
+
+.search-bar-box:focus-within {
+  box-shadow: 0 4px 8px rgba(0, 128, 255, 0.2), 0 2px 4px rgba(0, 128, 255, 0.2);  /* 阴影效果 */
+  transform: scale(1.02);  /* 轻微放大效果 */
+}
+
+.search-bar {
+  display: flex;
+  justify-items: start;
+  align-items: center;
+  height: 48px; 
+  font-size: 16px; 
+  box-sizing: border-box;
+  padding: 8px;
+  border: 0px; 
+  flex-grow: 1;
+  background-color: #EAF1FB;
+  max-width: 720px;
+  outline: none;
+  border-radius: 8px;  /* 添加圆角 */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;  /* 平滑过渡 */
+  caret-color: #007BFF; /* 设置光标颜色为蓝色 */
+  cursor: pointer;
+}
+
+/* 默认占位符样式 */
+.search-bar::placeholder {
+  color: #999; /* 默认占位符颜色 */
+  transition: opacity 0.3s ease; /* 添加过渡效果 */
+}
+
+/* 点击时隐藏占位符 */
+.search-bar:focus::placeholder {
+  opacity: 0;  /* 点击后占位符淡出 */
+}
+
+/* 可选：自定义插入符的动画效果（闪烁频率更明显） */
+.search-bar:focus {
+  caret-color: #007BFF; /* 让光标在获得焦点时变蓝 */
 }
 
 .selfprofile_contianer {
@@ -110,9 +166,27 @@
   border-radius: 50px;
   transition: background-color 0.3s ease; 
   color: #353535;
+  cursor: pointer;
 }
 
 .header_icon_box:hover {
+  background-color: #E8EAED;
+}
+
+.header_icon_box_searchbox {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  background-color: #EAF1FB;
+  border-radius: 50px;
+  transition: background-color 0.3s ease; 
+  color: #353535;
+  cursor: pointer;
+}
+
+.header_icon_box_searchbox:hover {
   background-color: #E8EAED;
 }
 
@@ -144,4 +218,5 @@
   width: 32px;
   height: 32px;
   border-radius: 50px;
+  cursor: pointer;
 }

@@ -28,7 +28,7 @@
 .header_content {
     display: flex;
     height: 48px;
-    width: 200px;
+    width: 100%;
     background: white;
     align-items: center;
     justify-content: space-between;
@@ -38,30 +38,105 @@
     -webkit-backdrop-filter: blur(10px);
     box-shadow: none;
     border-bottom: none;
+    z-index: 2;
 }
 
   
-  .rowbutton_container {
-    display: flex;
-    flex-direction: row;
-    width: 248px;
-    height: 100%;
-    border-width: 0px;
-  }
+.rowbutton_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 108px;
+  height: 100%;
+  border-width: 0px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
   
-  .row_button {
-    display: flex;
-    border-radius: 50px;
-    width: 48px;
-    height: 48px;
-    margin-left: 5px;
-    background-color: #F6F8FC;
-    transition: background-color 0.3s ease; 
-    justify-content: center;
-    align-items: center;
-    border-width: 0px;
-  }
+.row_button {
+  display: flex;
+  border-radius: 50px;
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  transition: background-color 0.3s ease; 
+  justify-content: center;
+  align-items: center;
+  border-width: 0px;
+}
   
-  .row_button:hover {
-    background-color: #E8EAED;
-  }
+.row_button:hover {
+  background-color: #E8EAED;
+}
+
+.column_container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column_box {
+  display: flex;
+  width: 25%;
+  height: 48px;
+  background-color: white;
+  transition: background-color 0.3s ease;
+  align-items: center;
+  position: relative;  /* 伪元素相对于 column_box 定位 */
+  border-width: 0px;
+}
+
+.column_box:hover {
+  background-color: #E8EAED;
+}
+
+.column_box::after {
+  content: '';               /* 伪元素内容为空 */
+  position: absolute;         /* 相对于 column_box 定位 */
+  bottom: 0;                  /* 定位到组件底部 */
+  left: 0;                    /* 从左侧开始 */
+  width: 0;                   /* 初始宽度为 0 */
+  height: 2px;                /* 线条的高度 */
+  background-color: #3581b8;     /* 线条颜色 */
+  transition: width 0.3s ease; /* 动画效果 */
+}
+
+.column_words {
+  display: flex;
+  font-size: 18px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.column_box:hover::after {
+  width: 100%;                /* 当悬停时，线条的宽度扩展到 100% */
+}
+
+
+.column_box:hover::after {
+  width: 100%;                /* 悬停时下边线的宽度延展到组件的宽度 */
+}
+
+.column_icon {
+  display: flex;
+  border-radius: 50px;
+  width: 36px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  border-width: 0px;
+}
+
+.pages_container {
+  display: flex;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pages_words {
+  display: flex;
+  flex-grow: 1;
+  font-size: 14px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

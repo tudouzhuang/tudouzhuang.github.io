@@ -23,14 +23,38 @@
   margin: 20px;
 }
 
+.sidebar_icon_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+}
+
+.sidebar_icon_box {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F8FC;
+  border-radius: 50px;
+  transition: background-color 0.3s ease; 
+  color: #353535;
+  cursor: pointer;
+}
+
+.sidebar_icon_box:hover {
+  background-color: #E8EAED;
+}
+
 .add-icon {
   flex: 0 0 30%; /* 占用30%高度 */
   display: flex;
   justify-content: center; /* 水平居中 */
   align-items: center; /* 垂直居中 */
   cursor: pointer; /* 鼠标指针样式 */
-  color: antiquewhite;
-  font-size: 24px; /* 图标大小 */
+  font-size: 32px; /* 图标大小 */
 }
 
 .empty-space {
@@ -39,7 +63,7 @@
 
 /* 样式设置标题 */
 h2 {
-  color: antiquewhite;
+  color: rgb(0, 0, 0);
 }
 
 /* 列表样式 */
