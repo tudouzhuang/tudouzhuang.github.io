@@ -15,39 +15,46 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-  
-  .image-display {
+.preview_img_container {
     display: flex;
-    position: relative; /* 确保子元素相对于父元素定位 */
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-  }
-  
-  .img_custom {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-  
-  .gradient-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none; /* 确保背景不会阻挡点击事件 */
-    border-radius: 10px;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
 }
-  
- .content-double_column{
+
+.preview_img_box {
     display: flex;
-    padding-right: 0;
-    margin-top: 20px;
-    margin-left: 100px;
-    flex-direction: row;
-    border-radius: 15px;
-    width: 74vw;
-    justify-content: space-between;
+    height: 32px;
+    width: 32px;
+    max-width: 32px;
+    max-height: 32px;
+    border-radius: 50px;
+}
+
+.preview_content_container {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.preview_content_title {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 8px;
+}
+
+.preview_content_words {
+    display: flex;
+    align-items: center;  
+    font-size: 16px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+    margin-left: 18px;
+}
+
+.preview_button_container {
+    display: flex;
+    width: 80px;
 }

@@ -11,8 +11,8 @@ function App() {
     <div className="app-container">
       <div>
         <Routes>
-          <Route path="/" element={<Home /> } /> {/* 默认路径显示 Content */}
-          <Route path="*" element={<NotFound />} /> {/* /NotFound 路径 */}
+          <Route path="/" element={<Home /> } /> 
+          <Route path="*" element={<NotFound />} /> 
           <Route path="/Article" element={<Article />} />
           <Route path="/About" element={<About />} />
         </Routes>
