@@ -19,16 +19,14 @@ function Home() {
     <div className="background_container">
       <div className="home-container">
         <div className="header_container">
-          {/* 传递 toggleNavbar 和 isExpanded 属性 */}
           <Header toggleNavbar={toggleNavbar} isExpanded={isNavbarExpanded} />
         </div>
         <div className="body_container">
           <div className="navbar_container">
-            {/* 传递 toggleNavbar, isExpanded 和 setIsNavbarExpanded */}
             <Navbar
               toggleNavbar={toggleNavbar}
               isExpanded={isNavbarExpanded}
-              setIsExpanded={setIsNavbarExpanded}  // 将 setIsNavbarExpanded 传递到 Navbar
+              setIsExpanded={setIsNavbarExpanded} 
             />
           </div>
           <div className="other_container">

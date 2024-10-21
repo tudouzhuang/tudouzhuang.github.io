@@ -1,15 +1,14 @@
 .content {
-    flex: 1; /* 让内容栏占据剩余的空间 */
+    overflow-y: auto !important; /* 如果内容溢出，允许滚动 */
     padding: 20px;
-    background-color: #f4f4f4; /* 设置一个浅色背景区分内容 */
-    overflow-y: auto; /* 如果内容溢出，允许滚动 */
-    margin-left: 100px; /* 为内容栏设置左边距，确保不被导航栏遮挡 */
-    margin-top: 45px;
-    margin-bottom: 20px;
+    background-color: white; /* 设置浅色背景 */
     border-radius: 15px; /* 设置圆角 */
-    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.2); /* 添加轻微阴影，增强视觉效果 */
-    width: 70vw;
     justify-content: center;
+    position: relative;
+    height: calc(100vh - 64px); /* 使内容高度根据视窗高度动态调整 */
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); /* 添加轻微阴影 */
+    margin: 0 10px 10px 10px; /* 设置内容周围的外边距，确保不溢出 */
+    max-height: calc(100vh - 110px); /* 确保内容不会超出父级范围 */
 }
 
 .content h1 {
@@ -20,13 +19,13 @@
     word-wrap: break-word;
 }
 
-.content words{
+.content words {
     display: block;
     white-space: pre-line;
     font-size: 24px;
 }
 
-.container_img{
+.container_img {
     width: 600px;
 }
 
@@ -41,47 +40,35 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-color: #428bca;
     border-left-width: 7px;
-  }
-  
-  .insights {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 10px;
-  }
-  
-  .footer-info {
+}
+
+.footer-info {
     display: flex;
     font-size: 14px;
     color: #777;
     justify-content: center;
-    
-  }
+}
 
-  .p{
+.p {
     font-size: 2em;
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-  }
+}
 
-@media (max-width: 600px){
-
+@media (max-width: 600px) {
     .content {
-        flex: 1; /* 让内容栏占据剩余的空间 */
         padding: 20px;
-        background-color: #f4f4f4; /* 设置一个浅色背景区分内容 */
-        overflow-y: auto; /* 如果内容溢出，允许滚动 */
-        margin-left: 70px; /* 为内容栏设置左边距，确保不被导航栏遮挡 */
+        background-color: #f4f4f4;
+        overflow-y: auto;
+        margin-left: 70px;
         margin-top: 45px;
         margin-bottom: 20px;
-        border-radius: 15px; /* 设置圆角 */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 添加轻微阴影，增强视觉效果 */
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         width: 65vw;
     }
-    
+
     .content h1 {
         font-size: 40px;
         display: flex;
@@ -89,14 +76,14 @@
         padding: 6px 15px 8px 15px;
         word-wrap: break-word;
     }
-    
-    .content words{
+
+    .content words {
         display: block;
         white-space: pre-line;
         font-size: 24px;
     }
-    
-    .container_img{
+
+    .container_img {
         width: 600px;
     }
 }

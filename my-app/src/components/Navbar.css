@@ -26,7 +26,7 @@
   width: 100%;                  /* 宽度占据父元素的所有宽度 */
   justify-content: center;
   align-items: start;
-  transition-delay: 0.1s;
+  transition-delay: 0.05s;
   border-radius: 16px;
 }
 
@@ -47,7 +47,7 @@
   border-radius: 16px;
   transition: width 0.3s ease; /* 为宽度变化添加过渡效果 */
   padding-left: 8px;
-  transition-delay: 0.1s;
+  transition-delay: 0.05s;
 }
 
 .main_buttonbox.collapsed {
@@ -118,9 +118,8 @@
   margin-bottom: 8px;
   margin-top: 8px;
   margin-left: 18px;
-  background-color: #EAEBEF;
   transition-duration: 0.3s; /* 为按钮宽度变化添加过渡效果 */
-  transition-delay: 0.1s;
+  transition-delay: 0.05s;
   transition-timing-function: ease;
   -webkit-font-smoothing: antialiased;
   flex-direction: column;
@@ -150,9 +149,33 @@
   justify-content: start;
   padding-left: 18px;
   align-items: center;
+  background-color: #EAEBEF;
+}
+
+.navbar_word {
+  opacity: 0;                            /* 初始透明度 */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* 过渡效果 */         /* 初始位置偏移 */
+  visibility: hidden;                    /* 初始隐藏 */
+  margin-left: 8px;                      /* 添加左侧间距，以防止元素重叠 */
+}
+
+.navbar_word.show {
+  opacity: 1;                            /* 可见时的透明度 */
+  transform: translateY(0);              /* 恢复到原位 */
+  visibility: visible;                   /* 设置为可见 */
+}
+
+.icon_container.expanded:hover {
   background-color: #D3E3FD;
 }
 
 .icon_box{
-  
+  display: flex;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  color: #353535;
 }

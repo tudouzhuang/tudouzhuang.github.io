@@ -1,12 +1,3 @@
-:root {
-  --cream: #f3f9d2ff;
-  --asparagus: #669d31ff;
-  --azul: #016fb9ff;
-  --carrot-orange: #ea9010ff;
-  --robin-egg-blue: #44cfcbff;
-  --uranian-blue: #a3d9ffff;
-}
-
 .header {
   display: flex;
   height: 48px;
@@ -61,40 +52,27 @@
   border-radius: 50px;
   width: 48px;
   height: 48px;
+  min-width: 48px;
+  min-height: 48px;
   margin-left: 5px;
   background-color: #F6F8FC;
   transition: background-color 0.3s ease; 
   justify-content: center;
   align-items: center;
   border-width: 0px;
+  cursor: pointer;
 }
 
 .menu_button:hover {
   background-color: #E8EAED;
 }
 
-.img_container {
+.title_img {
   display: flex;
-  width: 110px;
-  height: 44px;
-}
-
-.icon_container {
-  display: flex;
-  width: 32px;
-  height: 32px;
-}
-
-.icon_container:hover{
-  background-color: #D3E3FD;
-}
-
-.selfprofile_contianer {
-  display: flex;
-  width: 96px;
-  height: 48px;
-  margin-left: 100px;
-  justify-content: center;
+  flex-grow: 1;
+  max-width: 200px;
+  max-height: 30px;
+  margin-top: 10px;
 }
 
 .searchbar_container {
@@ -105,7 +83,10 @@
   align-items: center; 
 }
 
-.search-bar {
+.search-bar-box {
+  display: flex;
+  justify-items: start;
+  align-items: center;
   height: 48px; 
   font-size: 16px; 
   box-sizing: border-box;
@@ -113,7 +94,129 @@
   border: 1px solid #EAF1FB; 
   border-radius: 50px;
   flex-grow: 1;
-  margin-right: 60px;
   background-color: #EAF1FB;
+  max-width: 720px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;  /* 添加过渡效果 */
 }
 
+.search-bar-box:focus-within {
+  box-shadow: 0 4px 8px rgba(0, 128, 255, 0.2), 0 2px 4px rgba(0, 128, 255, 0.2);  /* 阴影效果 */
+  transform: scale(1.02);  /* 轻微放大效果 */
+}
+
+.search-bar {
+  display: flex;
+  justify-items: start;
+  align-items: center;
+  height: 48px; 
+  font-size: 16px; 
+  box-sizing: border-box;
+  padding: 8px;
+  border: 0px; 
+  flex-grow: 1;
+  background-color: #EAF1FB;
+  max-width: 720px;
+  outline: none;
+  border-radius: 8px;  /* 添加圆角 */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;  /* 平滑过渡 */
+  caret-color: #007BFF; /* 设置光标颜色为蓝色 */
+  cursor: pointer;
+}
+
+/* 默认占位符样式 */
+.search-bar::placeholder {
+  color: #999; /* 默认占位符颜色 */
+  transition: opacity 0.3s ease; /* 添加过渡效果 */
+}
+
+/* 点击时隐藏占位符 */
+.search-bar:focus::placeholder {
+  opacity: 0;  /* 点击后占位符淡出 */
+}
+
+/* 可选：自定义插入符的动画效果（闪烁频率更明显） */
+.search-bar:focus {
+  caret-color: #007BFF; /* 让光标在获得焦点时变蓝 */
+}
+
+.selfprofile_contianer {
+  display: flex;
+  width: 192px;
+  height: 48px;
+  justify-content: start;
+  flex-direction: row;
+  
+}
+
+.header_icon_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+}
+
+.header_icon_box {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F8FC;
+  border-radius: 50px;
+  transition: background-color 0.3s ease; 
+  color: #353535;
+  cursor: pointer;
+}
+
+.header_icon_box:hover {
+  background-color: #E8EAED;
+}
+
+.header_icon_box_searchbox {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  background-color: #EAF1FB;
+  border-radius: 50px;
+  transition: background-color 0.3s ease; 
+  color: #353535;
+  cursor: pointer;
+}
+
+.header_icon_box_searchbox:hover {
+  background-color: #E8EAED;
+}
+
+.header_avatar_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  height: 48px;
+}
+
+.avatar_box {
+  display: flex;
+  width: 42px;
+  height: 42px;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F8FC;
+  transition: background-color 0.3s ease; 
+}
+
+.avatar_box:hover {
+  background-color: #E8EAED;
+}
+
+.avatar_img {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+  cursor: pointer;
+}

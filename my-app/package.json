@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "",
+  "homepage": "http://tudouzhuang.github.io",
   "private": true,
   "dependencies": {
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.15",
