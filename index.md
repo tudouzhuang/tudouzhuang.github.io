@@ -1,23 +1,50 @@
+## 个人简介 (About Me)
+
+我是彭经纬，安徽大学计算机科学与技术专业本科在读（2023 级）[cite: 1]。主要研究与实践方向为 **C++/Linux 嵌入式软件开发与机器人系统**[cite: 1]。熟练掌握 STM32 开发、UART/CAN 通信协议与传感器驱动开发，具备多传感器融合与软硬件联合调试能力[cite: 1]。主持并结项国家级大创项目，作为核心研发成员曾获 RoboCup 机器人世界杯中国赛全国亚军/一等奖[cite: 1]。
+
 ---
-layout: homepage
+
+## 教育背景 (Education)
+
+* **安徽大学 (Anhui University)** · 计算机科学与技术 · 工学学士 (2023.09 - 2027.06)[cite: 1]
+  * **学业表现**：全程 GPA: **3.64 / 5.0**（专业排名 88/331），数学竞赛（提高班）97 分[cite: 1]。
+  * **核心课程**：数据结构、操作系统、网络原理（93分）、计算机组成原理、编译原理、算法设计与分析、Linux 系统编程[cite: 1]。
+  * **外语水平**：大学英语四级（CET-4 505 分）/ 大学英语六级（CET-6）[cite: 1]。
+
 ---
 
-## About Me
+## 核心技能 (Technical Skills)
 
-I am a Ph.D. student at ...
+* **编程语言与底层**：C/C++、Python、Linux 系统编程、Shell、8086 汇编[cite: 1]
+* **嵌入式与硬件**：STM32 系列微控制器、UART/CAN 串口协议、传感器驱动编写（红外/CO2/陀螺仪等）、软硬件联调[cite: 1]
+* **全栈与工程工具**：Linux/Git、Web 协同系统开发、元数据管理与接口联调[cite: 1]
 
-## Research Interests
+---
 
-- **Computer Vision:** image recognition, image generation, video captioning
-- **Machine Learning:** meta-learning, incremental learning, transfer learning
+## 重点项目与竞赛 (Projects & Competitions)
 
-## News
+* **RoboCup 机器人世界杯中国赛 —— 越障与搜救机器人** *(2026.02 - 2026.05)*[cite: 1]
+  * **传感驱动与采集**：基于 STM32 开发搜救感知模块，完成红外测距与 CO2 气体传感器的底层驱动编写及多路数据采集[cite: 1]。
+  * **下位机协议通信**：基于 UART 自定义数据帧通信协议，将传感器解析数据与机器人工作状态实时封装并稳定上传至上位机[cite: 1]。
 
-- **[Feb. 2020]** Our paper about incremental learning is accepted to CVPR 2020.
-- **[Feb. 2020]** We will host the ACM Multimedia Asia 2020 conference in Singapore!
-- **[Sept. 2019]** Our paper about few-shot learning is accepted to NeurIPS 2019.
-- **[Mar. 2019]** Our paper about few-shot learning is accepted to CVPR 2019.
+* **工业模具图纸在线审签与流转协同系统** *(2025.07 - 2026.07)*[cite: 1]
+  * **项目链接**：[GitHub 仓库 (tudouzhuang/webprogram)](https://github.com/tudouzhuang/webprogram)[cite: 1]
+  * **核心职责**：负责工业图纸在线解析、格式转换与多端状态流转模块开发，打通图纸在线审核与安全协同流程[cite: 1]。
 
-{% include_relative _includes/publications.md %}
+---
 
-{% include_relative _includes/services.md %}
+## 实习经历 (Internship)
+
+* **上海翎雀科技有限公司** · 软件开发实习生 *(2025.07 - 2025.08)*[cite: 1]
+  * 参与《Tommorrow-Labs 商城系统》软件设计与核心技术文档编写，参与软件著作权材料整理与申报[cite: 1]。
+  * 负责平台联调与功能测试，排查并修复数据录入逻辑与元数据生命周期管理缺陷，保障系统稳定交付[cite: 1]。
+
+---
+
+## 荣誉与奖项 (Honors & Awards)
+
+* **全国一等奖 / 亚军** · 2026 中国机器人大赛暨 RoboCup 机器人世界杯中国赛（中国自动化学会，2026.05）[cite: 1]
+* **一等奖（冠军）** · 安徽省青少年智能创新公开赛（共青团安徽省委，2024.08）[cite: 1]
+* **国家级大学生创新创业训练计划项目（项目负责人）** · 顺利结项（安徽大学，2026.03）[cite: 1]
+* **省级三等奖** · 中国大学生计算机设计大赛（安徽省教育厅，2026.04）[cite: 1]
+* **省级铜奖** · 安徽省大学生创新大赛 (2025)（安徽省教育厅，2025.09）[cite: 1]
